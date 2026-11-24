@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Portfolio</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; background: #f4f6f8; }
+  a { text-decoration: none; }
+
+  /* Navigation */
+  header { background: #1f3a5f; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+  header h2 { color: white; }
+  nav a { color: white; margin-left: 15px; }
+  nav a:hover { color: #ffc857; }
+
+  /* Sections */
+  section { padding: 50px 20px; max-width: 1000px; margin: auto; }
+  section h2 { text-align: center; color: #1f3a5f; margin-bottom: 25px; }
+
+  /* Hero / Profile */
+  .hero { background: #2e5c94; color: white; text-align: center; padding: 70px 20px; }
+  .photo { width: 120px; height: 120px; border-radius: 50%; background: #ffc857; color: #1f3a5f;
+           font-size: 50px; line-height: 120px; margin: 0 auto 15px; font-weight: bold; }
+  .hero h1 { font-size: 36px; }
+  .hero p { margin: 10px auto 20px; max-width: 500px; }
+  .btn { display: inline-block; background: #ffc857; color: #1f3a5f; padding: 10px 22px; border-radius: 5px; font-weight: bold; }
+  .btn:hover { background: #ffb627; }
+
+  /* Skills */
+  .skill { margin-bottom: 15px; }
+  .bar { background: #ddd; height: 14px; border-radius: 7px; }
+  .fill { background: #2e5c94; height: 14px; border-radius: 7px; }
+
+  /* Cards (projects & achievements) */
+  .cards { display: flex; gap: 20px; flex-wrap: wrap; }
+  .card { background: white; flex: 1; min-width: 250px; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15); }
+  .card h3 { color: #2e5c94; margin-bottom: 8px; }
+
+  /* Contact form */
+  form { max-width: 500px; margin: auto; }
+  input, textarea { width: 100%; padding: 10px; margin-bottom: 12px; border: 1px solid #aaa; border-radius: 5px; font-size: 15px; }
+  button { background: #1f3a5f; color: white; border: none; padding: 10px 25px; border-radius: 5px; font-size: 16px; cursor: pointer; }
+  button:hover { background: #2e5c94; }
+
+  footer { background: #1f3a5f; color: white; text-align: center; padding: 15px; }
+
+  /* Mobile screens */
+  @media (max-width: 600px) {
+    header { flex-direction: column; }
+    nav a { margin: 0 8px; }
+    .hero h1 { font-size: 28px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h2>My Portfolio</h2>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero" id="about">
+  <div class="photo">M</div>
+  <h1>Hi, I'm Mohith kumar</h1>
+  <p>B.Tech 1st year student who loves web design, coding and learning new technologies.</p>
+  <a class="btn" href="#contact">Contact Me</a>
+</div>
+
+<section id="skills">
+  <h2>My Skills</h2>
+  <div class="skill"><p>HTML</p><div class="bar"><div class="fill" style="width:85%"></div></div></div>
+  <div class="skill"><p>CSS</p><div class="bar"><div class="fill" style="width:75%"></div></div></div>
+  
+  <div class="skill"><p>Python</p><div class="bar"><div class="fill" style="width:60%"></div></div></div>
+</section>
+
+<section id="projects">
+  <h2>My Projects</h2>
+  <div class="cards">
+    <div class="card"><h3>Calculator</h3><p>A simple calculator program made using Python.</p></div>
+    <div class="card"><h3>College Website</h3><p>A responsive college homepage built using HTML and CSS.</p></div>
+    <div class="card"><h3>Quiz Game</h3><p>A small Python quiz game with scores.</p></div>
+  </div>
+</section>
+
+<section id="achievements">
+  <h2>Achievements</h2>
+  <div class="cards">
+    <div class="card"><h3>School Topper</h3><p>Scored 92% in 12th class.</p></div>
+    <div class="card"><h3>Coding Contest</h3><p>Won 2nd prize in an inter-school coding contest.</p></div>
+    <div class="card"><h3>Certificate</h3><p>Completed a basic web development course.</p></div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea rows="5" placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2026 Mohith kumar | Email: mohith@example.com</p>
+</footer>
+
+</body>
+</html>
